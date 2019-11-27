@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:id="@+id/ln"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textViewPoids"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Saisir votre poids : "
+            android:textSize="30dp"
+            android:layout_marginTop="10dp"/>
+
+        <EditText
+            android:id="@+id/editTextPoids"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="5"
+            android:inputType="number"
+            android:hint="votre poids"/>
+
+        <TextView
+            android:id="@+id/textViewTaille"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Saisir votre taille (en m) : "
+            android:textSize="30dp"/>
+
+        <EditText
+            android:id="@+id/editTextTaille"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:hint="votre taille"/>
+
+        <Button
+            android:id="@+id/buttonEnvoyer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Calcul de l'imc "
+            android:layout_marginTop="15dp"
+            android:textSize="25dp"/>
+
+        <TextView
+            android:id="@+id/textViewResultat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Resultat..."
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:textSize="25dp"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="253dp"
+            android:src="@drawable/graphmc" />
+
+    </LinearLayout>
+
+</RelativeLayout>
